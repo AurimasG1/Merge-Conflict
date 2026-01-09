@@ -1,0 +1,33 @@
+# ==========================
+# System files
+# ==========================
+.DS_Store           # macOS folder metadata
+Thumbs.db           # Windows thumbnail cache
+
+# ==========================
+# Editor / IDE files
+# ==========================
+*.swp               # Vim swap files
+*.sublime-project
+*.sublime-workspace
+.vscode/            # VS Code settings folder
+.idea/              # WebStorm / IntelliJ settings folder
+
+# ==========================
+# Design files
+# ==========================
+*.sketch
+*.xd
+*.fig
+
+# ==========================
+# Other temp / backup files
+# ==========================
+*.bak
+*.tmp
+*.log
+
+# ==========================
+# Node / dependency folders (optional if you don't use Node)
+# ==========================
+node_modules/
