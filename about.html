@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
-  </head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
 
-  <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+  <title>Frontend Mentor | PayAPI Website Challenge</title>
+  <link rel="stylesheet" href="styles.css/variables.css">
+  <link rel="stylesheet" href="styles.css/style.css">
+  <link rel="stylesheet" href="styles.css/header.css">
+  <script src="header.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <a href="./index.html">
+          <img src="assets/shared/desktop/logo.svg" alt="PayAPI logo" class="logo" />
+        </a>
+
+        <button class="menu-btn" id="openMenu" aria-label="Open menu">
+          <img src="assets/shared/mobile/menu.svg" alt="">
+        </button>
+
+
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-btn" id="closeMenu" aria-label="Close menu">
+            <img src="assets/shared/mobile/close.svg" alt="">
+          </button>
+          <hr>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#" class="cta">Schedule a Demo</a>
+        </div>
+
+        <div class="desktop-links">
+          <a href="./pricing.html">Pricing</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#" class="cta">Schedule a Demo</a>
+        </div>
+      </nav>
+    </header>
 
     We empower innovators by delivering access to the financial system
 
     Our Vision
 
-    Our main goal is to build beautiful consumer experiences along with developer-friendly 
-    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-    amazing products that solve big problems. We are deeply focused on democratizing financial 
+    Our main goal is to build beautiful consumer experiences along with developer-friendly
+    infrastructure. The result is an intelligent tool that gives everyone the ability to create
+    amazing products that solve big problems. We are deeply focused on democratizing financial
     services through technology.
 
     Our Business
 
-    At the core of our platform is the technical infrastructure APIs that connect consumers. 
-    Our innovative product provides key insights for businesses and individuals, as well as 
+    At the core of our platform is the technical infrastructure APIs that connect consumers.
+    Our innovative product provides key insights for businesses and individuals, as well as
     robust reporting for traditional financial institutions and developers.
 
-    Team Members 
+    Team Members
     300+
 
-    Offices in the US 
+    Offices in the US
     3
 
-    Transactions analyzed 
+    Transactions analyzed
     10M+
 
     The Culture
 
-    We strongly believe there's always an opportunity to learn from each other outside of 
-    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
+    We strongly believe there's always an opportunity to learn from each other outside of
+    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups.
     We always value cross-team collaboration and diversity of thought, no matter the job title.
 
     The People
-    
-    We're all passionate about building a more efficient and inclusive financial infrastructure 
+
+    We're all passionate about building a more efficient and inclusive financial infrastructure
     together. At PayAPI, we have diverse backgrounds and skills.
 
-    Ready to start? 
-    Enter email address 
+    Ready to start?
+    Enter email address
     Schedule a Demo
 
     Pricing
     About
     Contact
-  </body>
+  </div>
+</body>
 
 </html>
