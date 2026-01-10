@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
-  </head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
 
-  <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+  <title>Frontend Mentor | PayAPI Website Challenge</title>
+  <link rel="stylesheet" href="styles.css/variables.css">
+  <link rel="stylesheet" href="styles.css/style.css">
+  <link rel="stylesheet" href="styles.css/header.css">
+  <script src="header.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <a href="./index.html">
+          <img src="assets/shared/desktop/logo.svg" alt="PayAPI logo" class="logo" />
+        </a>
+
+        <button class="menu-btn" id="openMenu" aria-label="Open menu">
+          <img src="assets/shared/mobile/menu.svg" alt="">
+        </button>
+
+
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-btn" id="closeMenu" aria-label="Close menu">
+            <img src="assets/shared/mobile/close.svg" alt="">
+          </button>
+          <hr>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#" class="cta">Schedule a Demo</a>
+        </div>
+
+        <div class="desktop-links">
+          <a href="./pricing.html">Pricing</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#" class="cta">Schedule a Demo</a>
+        </div>
+      </nav>
+    </header>
 
     Submit a help request and we’ll get in touch shortly.
-    
+
     Name
     Email Address
     Company Name
@@ -27,13 +59,14 @@
 
     Join the thousands of innovators already building with us
 
-    Ready to start? 
-    Enter email address 
+    Ready to start?
+    Enter email address
     Schedule a Demo
 
     Pricing
     About
     Contact
-  </body>
+  </div>
+</body>
 
 </html>
