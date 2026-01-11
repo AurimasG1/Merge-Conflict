@@ -12,21 +12,32 @@
 	</head>
 	<body>
 		<!--- Header start -->
-		<header>
-			<a href="#" class="logo">
-				<img src="assets/shared/desktop/logo.svg" alt="Logo" class="logo-img" />
-			</a>
-			<nav>
-				<a href="./pricing.html">Pricing</a>
-				<a href="./about.html">About</a>
-				<a href="./contact.html">Contact</a>
-				<a href="#">Schedule a Demo</a>
-			</nav>
-			<div class="hamburger">
-				<a href="#">
-					<img src="" alt="Menu icon" />
+		<header class="header">
+			<nav class="nav">
+				<a href="./index.html">
+					<img src="assets/shared/desktop/logo.svg" alt="PayAPI logo" class="logo" />
 				</a>
-			</div>
+				<button class="menu-btn" id="openMenu" aria-label="Open menu">
+					<img src="assets/shared/mobile/menu.svg" alt="" />
+				</button>
+				<div class="mobile-menu" id="mobileMenu">
+					<button class="close-btn" id="closeMenu" aria-label="Close menu">
+						<img src="assets/shared/mobile/close.svg" alt="" />
+					</button>
+					<hr />
+					<a href="./pricing.html">Pricing</a>
+					<a href="./about.html">About</a>
+					<a href="./contact.html">Contact</a>
+					<a href="#" class="cta">Schedule a Demo</a>
+				</div>
+
+				<div class="desktop-links">
+					<a href="./pricing.html">Pricing</a>
+					<a href="./about.html">About</a>
+					<a href="./contact.html">Contact</a>
+					<a href="#" class="cta">Schedule a Demo</a>
+				</div>
+			</nav>
 		</header>
 		<!--- Header end -->
 		<!--- Section 1 start -->
