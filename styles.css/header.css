@@ -1,15 +1,19 @@
 .header {
-  padding: 1.5rem;
+  padding: 40.76px 24px 152.47px;
   font-family: var(--font-body);
-  font-size: var(--body-font-size);
+
   background-color: var(--light);
-  width: 100%;
+  width: 326.24px;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-logo {
+  color: var(--san-julian-blue);
 }
 
 .menu-btn {
@@ -52,6 +56,11 @@
   color: var(--linkwater-white);
   text-decoration: none;
   font-size: 20px;
+  opacity: 0.7;
+}
+
+.mobile-menu a:hover {
+    opacity: 1;
 }
 
 .close-btn {
@@ -61,18 +70,18 @@
 }
 
 .cta {
-  top: 307px;
   background: var(--dark-pink);
   color: var(--linkwater-white);
-  font-size: var(--body-font-size);
-  
+  font-size: var(--message-font-size);
+  opacity: 1;
   padding: 16px 36px 15px 38px;
   text-align: center;
   border-radius: 24px;
   letter-spacing: -0.12px;
-  height: 24.5px;
+  height: var(--button-height);
   width: 252px;
 }
+
 .cta:hover {
   background-color: var(--charm-pink);
 }
