@@ -1,0 +1,19 @@
+.start_building {
+	display: flex;
+	flex-direction: column;
+}
+
+.start_building-img-wrapper {
+	max-width: 124px;
+	max-height: 239px;
+	margin: 0 auto;
+	order: 1;
+}
+
+.start_building-img {
+	width: 100%;
+}
+
+.start_building-text {
+	order: 2;
+}
