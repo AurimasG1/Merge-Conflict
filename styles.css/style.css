@@ -1,17 +1,18 @@
-body {
+* {
 	box-sizing: border-box;
+}
+body {
 	margin: 0;
 	padding: 0;
 }
 
 .container {
+	background-color: #edf3f8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	padding-left: 24px;
-	padding-right: 24px;
 	/* min-width galima keisti */
 	min-width: 320px;
 	max-width: 375px;
