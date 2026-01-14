@@ -28,10 +28,9 @@
     border-radius: var(--button-radius);
     opacity: 1;
     font-family: var(--font-body);
-    font-size: var(--message-font-size);
-    font-weight: bold;
-    border: none;
-    
+    font-size: var(--body-font-size);
+    font-weight: 700; 
+    border: none;    
     cursor: pointer;
 }
 
@@ -39,8 +38,8 @@
     color: var(--san-julian-blue);
     text-align: left;
     padding-left: 27px;
-    opacity: 0.5;
-    box-shadow: 0 4px 8px var(--grey), 0 6px 20px var(--dark-grey);
+    opacity: 0.5;   
+    box-shadow: 20px 9px 41px 5px var(--dark-grey);
 
 }
 
