@@ -3,7 +3,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	font-family: var(--font-body);
 	background-color: var(--mirage-blue);
 	width: 375px;
@@ -16,7 +15,6 @@
 	width: 100%;
 }
 
-
 .footer-logo {
 	color: var(--linkwater-white);
 }
@@ -24,7 +22,6 @@
 .footer-menu {
 	display: flex;
 	flex-direction: column;
-
 	inset: 0 0 0 auto;
 	padding: 43.97px 159px;
 	gap: 32px;
