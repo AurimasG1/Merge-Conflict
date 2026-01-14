@@ -3,7 +3,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 	font-family: var(--font-body);
 	background-color: var(--mirage-blue);
 	width: 375px;
