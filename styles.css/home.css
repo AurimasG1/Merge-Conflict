@@ -268,7 +268,6 @@
 		max-height: 299px;
 	}
 	.start_building-text {
-		order: 2;
 		h1 {
 			font-size: var(--h2-size);
 			line-height: var(--h2-line-height);
@@ -276,16 +275,15 @@
 			margin: 54px 0 16px 0;
 		}
 		form {
+			position: relative;
 			display: flex;
-			flex-direction: column;
-			gap: 16px;
-			width: 100%;
-			max-width: 327px;
+			flex-direction: row;
+			gap: 0;
+			max-width: 445px;
 			margin: 0 auto;
 		}
 		form input {
-			width: 100%;
-			border-radius: 24px;
+			border-radius: 999px;
 			padding: 16px 27px;
 			font-size: 15px;
 			line-height: 17px;
@@ -297,21 +295,12 @@
 			box-shadow: 18px 15px 30px 10px rgba(0, 0, 0, 0.28);
 		}
 		form button {
-			width: 100%;
-			opacity: 1;
-			letter-spacing: -0.12px;
-			font-size: 15px;
-			line-height: 17px;
-			font-family: var(--font-body);
-			font-weight: 700;
-			background-color: var(--button-pink-bg);
-			color: var(--button-pink-text);
-			border-radius: 24px;
-			padding-top: 16px;
-			padding-bottom: 15px;
-			padding-left: 50px;
-			padding-right: 46px;
-			border: none;
+			width: auto;
+			position: absolute;
+			right: 0;
+			min-width: 173px;
+			max-width: 445px;
+			padding: 16px 24px;
 		}
 		p {
 			font-size: 15px;
