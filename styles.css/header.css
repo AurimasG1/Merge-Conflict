@@ -1,15 +1,19 @@
 .header {
-  padding: 1.5rem;
   font-family: var(--font-body);
-  font-size: var(--body-font-size);
   background-color: var(--light);
   width: 100%;
+  padding: 40.76px 24px 152.47px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between;  
+  width: 100%;
+}
+
+.header-logo {
+  color: var(--san-julian-blue);
 }
 
 .menu-btn {
@@ -23,17 +27,14 @@
 }
 
 .mobile-menu {
-  position: fixed;
-  inset: 0 0 0 auto;
-  /* width: 75%; */
-  max-width: 300px;
-  background-color: var(--mirage-blue);
-  padding: 2rem;
-
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-
+  position: fixed;
+  inset: 0 0 0 auto;
+  width: 80%;
+  background-color: var(--mirage-blue);
+  padding: 24px;
+  gap: 32px;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -44,35 +45,51 @@
 
 .mobile-menu hr {
   color: var(--linkwater-white);
-  width: 252px;
-  height: 0.1px;
+  width: 84%;
+  height:1px;
+  opacity: 0.7;
 }
 
 .mobile-menu a {
   color: var(--linkwater-white);
   text-decoration: none;
   font-size: 20px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.mobile-menu a:hover {
+  opacity: 1;
 }
 
 .close-btn {
   background: none;
-  border: none;
-  align-self: flex-end;
+  border: none;  
+  align-self: flex-end;  
+  color: var(--linkwater-white);
+  opacity: 1;
+  padding-top: 24.54px;
+}
+.close-btn img {
+  width: 21.92px;
+  height: 21.92px;  
 }
 
-.cta {
-  top: 307px;
+.cta {    
+  margin: 0 auto;
   background: var(--dark-pink);
   color: var(--linkwater-white);
   font-size: var(--body-font-size);
-  
-  padding: 16px 36px 15px 38px;
+  font-weight: 700;
+  opacity: 1;
   text-align: center;
   border-radius: 24px;
+  border: none;
   letter-spacing: -0.12px;
-  height: 24.5px;
-  width: 252px;
+  height: var(--button-height);
+  width: 84%;
 }
+
 .cta:hover {
   background-color: var(--charm-pink);
 }
