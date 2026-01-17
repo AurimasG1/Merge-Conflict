@@ -31,7 +31,7 @@
     font-size: var(--body-font-size);
     font-weight: 700; 
     border: none;    
-    cursor: pointer;
+    cursor: pointer;;
 }
 
 .email {

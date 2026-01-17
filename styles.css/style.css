@@ -1,17 +1,77 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 375px;
-    text-align: center;
-    background-color: var(--bodylightgrey);
+	min-width: 375px;
+	background-color: var(--bodylightgrey);
+	text-align: center;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.home-page {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.home-page::before {
+    content: "";
+    position: absolute;
+    top: -550px;
+    left: -202px;
+    width: 780px;
+    height: 780px;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat center top / cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: -607px;
+    left: -202px;
+    width: 780px;
+    height: 780px;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat center top/ cover;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mobile-page {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.mobile-page::before {
+    content: "";
+    position: absolute;
+    top: -644px;
+    left: 74px;
+    width: 780px;
+    height: 780px;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat top right / cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+	.container {
+		min-width: 768px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		min-width: 1440px;
+	}
 }
