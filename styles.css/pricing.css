@@ -1,0 +1,89 @@
+/* Pricing h1 */
+h1{
+  font-family: var(--font-heading);
+  background-color: var(--light);
+  width: 100%;
+  padding: 0px 24px 13px;
+  color: var(--san-julian-blue);
+  text-align: center;
+  letter-spacing: -0.25px;
+  font-size: var(--h3-large-size);
+  opacity: 1;
+}
+.pricing {
+  padding-bottom: 44px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+/* Free plan h2*/
+h2 {
+  font-family: var(--font-heading);
+  background-color: var(--light);
+  width: 100%;
+  color: var(--dark-pink);
+  text-align: center;
+  letter-spacing: -0.18px;
+  font-size: var(--h4-size);
+  opacity: 1;
+}
+/* Free plan p */
+p {
+  opacity: 1;
+  color: var(--light-san-julian-blue);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  letter-spacing: 0;
+  font-family: var(--font-body);
+  margin: 0;
+	font-weight: 300;
+  text-align: center; 
+}
+.Kaina_skaiciais {
+  font-family: var(--font-heading);
+  width: 100%;
+  color: var(--san-julian-blue);
+  text-align: center;
+  letter-spacing: -0.43px;
+  font-size: var(--h1-small-size);
+  opacity: 1;
+}
+.button {
+  display: inline-block;
+  height: var(--button-height);
+  line-height: var(--button-height);
+  padding: 0 32px;
+  background-color: var(--button-dark-bg);
+  color: var(--button-dark-text);
+  border-radius: var(--button-radius);
+  border-color: var(--button-dark-border);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: var(--body-font-size);
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid var(--light-san-julian-blue);
+top: 737px;
+left: 104px;
+width: 168px;
+height: 48px;
+}
+li::before{
+  content: "✓";
+  color: var(--dark-pink);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 8px;
+}
+
+li{
+  font-family: var(--font-body);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  color: var(--san-julian-blue);
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 1;
+  list-style: none;
+}
