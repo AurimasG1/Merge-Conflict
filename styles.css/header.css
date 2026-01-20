@@ -2,7 +2,7 @@
   font-family: var(--font-body);
   background-color: var(--light);
   width: 100%;
-  padding: 40.76px 24px 38.45px;
+  padding: 40.76px 24px 32.47px;
   position: relative;
   z-index: 20;
 }
@@ -46,11 +46,11 @@
 
 .mobile-menu::before {
   content: "";
-  position: absolute;  
+  position: absolute;
   width: 780px;
   height: 780px;
-  background: url("/assets/shared/desktop/bg-pattern-circle.svg")
-    no-repeat center / cover;
+  background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+    center / cover;
   z-index: 0;
   pointer-events: none;
 }
@@ -120,16 +120,50 @@
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    padding: 45.76px 48px 60.94px 39.76px;
+  }
+
   .menu-btn {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
   .desktop-links {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-left: auto;
+    gap: 40px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .desktop-links a {
+    text-decoration: none;
+    color: var(--san-julian-blue);
+    font-weight: 700;
+    opacity: 0.7;
+  }
+
+  .desktop-links a:hover {
+    opacity: 1;
+  }
+
+  .desktop-links .cta {
+    width: auto;
+    padding: 0 24px;
+    margin: 0;
   }
 }
 
@@ -137,9 +171,11 @@
   .menu-btn {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
+
   .desktop-links {
     display: flex;
     justify-content: center;
