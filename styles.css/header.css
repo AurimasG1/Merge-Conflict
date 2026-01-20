@@ -34,7 +34,7 @@
   flex-direction: column;
   position: fixed;
   inset: 0 0 0 auto;
-  width: 80%;
+  width: 300px;
   background-color: var(--mirage-blue);
   padding: 24px;
   gap: 32px;
@@ -112,7 +112,7 @@
   border: none;
   letter-spacing: -0.12px;
   height: var(--button-height);
-  width: 84%;
+  width: 252px;
 }
 
 .cta:hover {
