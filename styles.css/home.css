@@ -263,7 +263,7 @@
 
 .finances div p {
 	font-size: var(--body-font-size);
-	line-height: var(--body-line-height);
+	line-height: 25px;
 	font-family: var(--font-body);
 	color: var(--light-san-julian-blue);
 	letter-spacing: -0.12px;
@@ -355,10 +355,23 @@
 		margin: 0 0 8px 0;
 	}
 
+	.work_with-text p {
+		max-width: 456px;
+		margin: 0 auto;
+	}
+
+	.work_with-text a {
+		margin-top: 40px;
+		margin-bottom: 88px;
+	}
+
 	.work_with-logos {
 		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 60px;
+		column-gap: 57px;
 		row-gap: 39px;
+		max-width: 536px;
+		margin: 88px auto 70px;
+		align-content: center;
 	}
 
 	.work_with-logos li svg {
@@ -383,6 +396,11 @@
 		margin: 54px 0 8px 0;
 	}
 
+	.easy_implement-text p {
+		max-width: 573px;
+		margin: 0 auto;
+	}
+
 	.simple {
 		padding-left: 97px;
 		padding-right: 98px;
@@ -404,12 +422,35 @@
 		margin: 54px 0 8px 0;
 	}
 
+	.simple-text p {
+		max-width: 573px;
+		margin: 0 auto;
+	}
+
 	.finances {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		padding-left: 39px;
 		padding-right: 38px;
 		margin: 108px 0 0;
+		text-align: center;
+	}
+
+	.finances div h3 {
+		margin: 34px 0px 18px 0;
+	}
+
+	.finances div p {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+		max-width: 227px;
+	}
+
+	.finances div svg {
+		width: 88px;
+		height: auto;
 	}
 }
 
@@ -494,26 +535,43 @@
 	}
 
 	.work_with {
-		padding-left: 116px;
-		padding-right: 116px;
+		padding-left: 165px;
+		padding-right: 163px;
+		flex-direction: row;
+		gap: 131px;
 	}
 
 	.work_with-text {
-		padding-left: 39px;
-		padding-right: 38px;
+		padding: 0;
+		order: 1;
+		text-align: left;
 	}
 
 	.work_with-text h2 {
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 0 0 8px 0;
+		margin: 106px 0 8px 0;
+		text-align: left;
+	}
+
+	.work_with-text a {
+		margin-top: 40px;
+		margin-bottom: 100px;
+	}
+
+	.work_with-text p {
+		max-width: 445px;
+		margin: 0 auto;
 	}
 
 	.work_with-logos {
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 60px;
 		row-gap: 39px;
+		margin: 0;
+		align-content: center;
+		justify-content: center;
 	}
 
 	.work_with-logos li svg {
