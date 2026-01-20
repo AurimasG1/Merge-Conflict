@@ -1,19 +1,85 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-	min-width: 375px;
-	background-color: var(--bodylightgrey);
-	text-align: center;
+  min-width: 375px;
+  background-color: var(--bodylightgrey);
+  text-align: center;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
 }
 
-@media (min-width: 768px) {
-	.container {
-		min-width: 768px;
-	}
+.home-page {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.home-page::before {
+  content: "";
+  position: absolute;
+  top: -550px;
+  left: -202px;
+  width: 780px;
+  height: 780px;
+  background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+    center top / cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.mobile-page::before {
+  content: "";
+  position: absolute;
+  top: -644px;
+  left: 74px;
+  width: 780px;
+  height: 780px;
+  background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+    center top / cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+.container::after {
+  content: "";
+  position: absolute;
+  bottom: -607px;
+  left: -202px;
+  width: 780px;
+  height: 780px;
+  background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+    center top/ cover;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.home-page .mobile-menu::before {
+  top: -550px;
+  right: -200px;
+}
+
+.mobile-page .mobile-menu::before {
+  top: -644px;
+  right: -374px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    min-width: 1440px;
+  }
 }
