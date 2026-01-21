@@ -7,50 +7,48 @@
 }
 
 .ready-section h3 {
-    font-family: var(--font-heading);
-    font-size: var(--h3-large-size);
-    color: var(--san-julian-blue);
-    margin-bottom: 21px;
+	font-family: var(--font-heading);
+	font-size: var(--h3-large-size);
+	color: var(--san-julian-blue);
+	margin-bottom: 21px;
 }
 
 .ready-section form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
 }
 
 .email,
 .demobutton {
-    width: 327px;
-    height: var(--button-height);
-    border-radius: var(--button-radius);
-    opacity: 1;
-    font-family: var(--font-body);
-    font-size: var(--body-font-size);
-    font-weight: 700; 
-    border: none;    
-    cursor: pointer;;
+	width: 327px;
+	height: var(--button-height);
+	border-radius: var(--button-radius);
+	opacity: 1;
+	font-family: var(--font-body);
+	font-size: var(--body-font-size);
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
 }
 
 .email {
-    color: var(--san-julian-blue);
-    text-align: left;
-    padding-left: 27px;
-    opacity: 0.5;   
-    box-shadow: 20px 9px 41px 5px var(--dark-grey);
-
+	color: var(--san-julian-blue);
+	text-align: left;
+	padding-left: 27px;
+	opacity: 0.5;
+	box-shadow: 20px 9px 41px 5px var(--dark-grey);
 }
 
 .demobutton {
-    color: var(--linkwater-white);
-    text-align: center;
-    background: var(--dark-pink);
+	color: var(--linkwater-white);
+	text-align: center;
+	background: var(--dark-pink);
 }
 
 .demobutton:hover {
-    background-color: var(--charm-pink);
-    
+	background-color: var(--charm-pink);
 }
