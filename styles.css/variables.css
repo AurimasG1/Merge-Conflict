@@ -1,93 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    /* Collors */
-    --white: #FFFFFF;
-    --mirage-blue: #1B262F;
-    --san-julian-blue: #36536B;
-    --linkwater-white: #FBFCFE;
-    --red: #FF0000;
-    --dark-pink: #BA4270;
-    --dark-grey: #00000080;
-    --grey: #36536B40;
-    --charm-pink: #DA6D97;    
-    --light-grey: #E1E1E1;    
-    --light-san-julian-blue: #6C8294;
-    --bodylightgrey: #EDF3F8;
-    --phonelightgrey: #213648;
-    --phonegrey: #454545A6;
-    --phonelight: #999999A6;
-    --phonewhite: #FFFFFFA6;
-    --phonewhiteshade: #FFFFFF00;
-    --phoneplaingrey: #BABABA;
-    --phonesidegrey: #2E423C;
-    --imgtopgrey: #2E3F4D;
-    --imgroundblue: #527695;
-    --aboutpicturegrey: #D8D8D8;
-    
-    /* Typography */    
-    
-    --font-heading: 'DM Serif Display', serif;
-    --font-body: 'Public Sans', sans-serif;
+	/* Collors */
+	--white: #ffffff;
+	--mirage-blue: #1b262f;
+	--san-julian-blue: #36536b;
+	--linkwater-white: #fbfcfe;
+	--red: #ff0000;
+	--dark-pink: #ba4270;
+	--dark-grey: #00000080;
+	--grey: #36536b40;
+	--charm-pink: #da6d97;
+	--light-grey: #e1e1e1;
+	--light-san-julian-blue: #6c8294;
+	--bodylightgrey: #edf3f8;
+	--phonelightgrey: #213648;
+	--phonegrey: #454545a6;
+	--phonelight: #999999a6;
+	--phonewhite: #ffffffa6;
+	--phonewhiteshade: #ffffff00;
+	--phoneplaingrey: #bababa;
+	--phonesidegrey: #2e423c;
+	--imgtopgrey: #2e3f4d;
+	--imgroundblue: #527695;
+	--aboutpicturegrey: #d8d8d8;
 
-    --h1-large-size: 72px;
-    --h1-large-line-height: 72px;
+	/* Typography */
 
-    --h1-small-size: 56px;
-    --h1-small-line-height: 56px;
+	--font-heading: 'DM Serif Display', serif;
+	--font-body: 'Public Sans', sans-serif;
 
-    --h2-size: 48px;
-    --h2-line-height: 56px;
+	--h1-large-size: 72px;
+	--h1-large-line-height: 72px;
 
-    --h3-large-size: 32px;
-    --h3-large-line-height: 40px;
+	--h1-small-size: 56px;
+	--h1-small-line-height: 56px;
 
-    --h3-small-size: 18px;
-    --h3-small-line-height: 25px;
+	--h2-size: 48px;
+	--h2-line-height: 56px;
 
-    --h4-size: 24px;
-    --h4-line-height: 32px;
+	--h2-small-size: 32px;
+	--h2-small-line-height: 36px;
 
-    --body-font-size: 15px;
-    --body-line-height: 28px;
+	--h2-large-size: 36px;
+	--h2-large-line-height: 36px;
 
-    /* Buttons */
-    --button-height: 48px;
-    --button-radius: 24px;
+	--h3-large-size: 32px;
+	--h3-large-line-height: 40px;
 
-    --button-pink-bg: var(--dark-pink);
-    --button-pink-hover-bg: var(--charm-pink);
-    --button-pink-text: var(--white);
-    --button-pink-disabled-opacity: 0.5;
+	--h3-small-size: 18px;
+	--h3-small-line-height: 25px;
 
-    --button-light-bg: transparent;
-    --button-light-border: var(--linkwater-white);
-    --button-light-hover-bg: var(--white);
-    --button-light-text: var(--linkwater-white);
-    --button-light-disabled-opacity: 0.5;
+	--h4-size: 24px;
+	--h4-line-height: 32px;
 
-    --button-dark-bg: transparent;
-    --button-dark-border: var(--san-julian-blue);
-    --button-dark-hover-bg: var(--san-julian-blue);
-    --button-dark-text: var(--san-julian-blue);
-    --button-dark-hover-text: var(--white);
-    --button-dark-disabled-opacity: 0.5;
+	--body-font-size: 15px;
+	--body-line-height: 28px;
 
-    /* Inputs */
-    --input-height: 42px;
-    --input-radius: 4px;
+	/* Buttons */
+	--button-height: 48px;
+	--button-radius: 24px;
 
-    --input-border-color: var(--light-grey);
-    --input-focus-border-color: var(--san-julian-blue);
-    --input-error-border-color: var(--red);
+	--button-pink-bg: var(--dark-pink);
+	--button-pink-hover-bg: var(--charm-pink);
+	--button-pink-text: var(--white);
+	--button-pink-disabled-opacity: 0.5;
 
-    --message-font-size: 15px;
-    --message-line-height: 25px;
+	--button-light-bg: transparent;
+	--button-light-border: var(--linkwater-white);
+	--button-light-hover-bg: var(--white);
+	--button-light-text: var(--linkwater-white);
+	--button-light-disabled-opacity: 0.5;
 
-    --checkbox-size: 24px;
-    --checkbox-bg: var(--san-julian-blue);
-    --checkbox-check-color: var(--white);
+	--button-dark-bg: transparent;
+	--button-dark-border: var(--san-julian-blue);
+	--button-dark-hover-bg: var(--san-julian-blue);
+	--button-dark-text: var(--san-julian-blue);
+	--button-dark-hover-text: var(--white);
+	--button-dark-disabled-opacity: 0.5;
 
-    --checkbox-opacity-normal: 0.25;
-    --checkbox-opacity-disabled: 0.05;
+	/* Inputs */
+	--input-height: 42px;
+	--input-radius: 4px;
+
+	--input-border-color: var(--light-grey);
+	--input-focus-border-color: var(--san-julian-blue);
+	--input-error-border-color: var(--red);
+
+	--message-font-size: 15px;
+	--message-line-height: 25px;
+
+	--checkbox-size: 24px;
+	--checkbox-bg: var(--san-julian-blue);
+	--checkbox-check-color: var(--white);
+
+	--checkbox-opacity-normal: 0.25;
+	--checkbox-opacity-disabled: 0.05;
 }
