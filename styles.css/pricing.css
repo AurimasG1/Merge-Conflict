@@ -62,10 +62,6 @@ p {
   font-weight: 600;
   text-align: center;
   border: 1px solid var(--light-san-julian-blue);
-top: 737px;
-left: 104px;
-width: 168px;
-height: 48px;
 }
 li::before{
   content: "✓";
