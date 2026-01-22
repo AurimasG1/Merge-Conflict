@@ -28,10 +28,11 @@
 	font-family: var(--font-heading);
 	text-align: center;
 	letter-spacing: -0.25px;
-	margin: 27px 0 13px 0;
+	margin: 27px auto 13px auto;
 	font-weight: 400;
 	opacity: 1;
 	color: var(--san-julian-blue);
+	max-width: 327px;
 }
 
 .start_building-text form {
@@ -96,6 +97,7 @@
 	display: flex;
 	flex-direction: column;
 	background-color: var(--mirage-blue);
+	margin: 0 auto;
 }
 
 .work_with-text {
@@ -110,7 +112,8 @@
 	font-weight: 400;
 	opacity: 1;
 	color: var(--linkwater-white);
-	margin: 0 0 5px 0;
+	margin: 0 auto 5px auto;
+	max-width: 327px;
 }
 
 .work_with-text p {
@@ -120,8 +123,9 @@
 	line-height: var(--body-line-height);
 	letter-spacing: 0;
 	font-family: var(--font-body);
-	margin: 0;
+	margin: 0 auto 0 auto;
 	font-weight: 200;
+	max-width: 327px;
 }
 
 .work_with-text a {
@@ -143,14 +147,13 @@
 
 .work_with-logos {
 	order: 1;
-	margin: 0;
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 10px;
 	row-gap: 40px;
-	margin-top: 80px;
-	margin-bottom: 59px;
+	margin: 80px auto 59px auto;
+	max-width: 279.15px;
 }
 
 .work_with-logos li {
@@ -190,7 +193,8 @@
 	font-weight: 400;
 	opacity: 1;
 	color: var(--san-julian-blue);
-	margin: 47px 0 12px 0;
+	margin: 47px auto 12px auto;
+	max-width: 327px;
 }
 
 .easy_implement-text p {
@@ -200,15 +204,15 @@
 	line-height: var(--body-line-height);
 	letter-spacing: 0;
 	font-family: var(--font-body);
-	margin: 0;
+	margin: 0 auto 0 auto;
 	font-weight: 300;
+	max-width: 328px;
 }
 
 .simple {
 	padding-left: 24px;
 	padding-right: 24px;
-	margin-top: 88px;
-	margin-bottom: 88px;
+	margin: 88px auto 88px auto;
 }
 
 .simple-img-wrapper {
@@ -230,7 +234,8 @@
 	font-weight: 400;
 	opacity: 1;
 	color: var(--san-julian-blue);
-	margin: 47px 0 12px 0;
+	margin: 47px auto 12px auto;
+	max-width: 327px;
 }
 
 .simple-text p {
@@ -240,14 +245,15 @@
 	line-height: var(--body-line-height);
 	letter-spacing: 0;
 	font-family: var(--font-body);
-	margin: 0;
+	margin: 0 auto 0 auto;
 	font-weight: 300;
+	max-width: 328px;
 }
 
 .finances {
 	padding-left: 24px;
 	padding-right: 23px;
-	margin: 88px 0 0;
+	margin: 88px auto 0 auto;
 }
 
 .finances div h3 {
@@ -259,6 +265,12 @@
 	letter-spacing: -0.14px;
 	font-weight: 700;
 	opacity: 1;
+	max-width: 328px;
+	margin: 34px auto 18px auto;
+}
+
+.finances div:first-of-type h3 {
+	margin: 35px auto 18px auto;
 }
 
 .finances div p {
@@ -267,11 +279,11 @@
 	font-family: var(--font-body);
 	color: var(--light-san-julian-blue);
 	letter-spacing: -0.12px;
-	margin: 0;
 	font-weight: 300;
-	margin-bottom: 53px;
+	margin: 0 auto 53px auto;
 	text-align: center;
 	opacity: 1;
+	max-width: 328px;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -289,7 +301,8 @@
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 54px 0 16px 0;
+		margin: 54px auto 16px auto;
+		max-width: 573px;
 	}
 
 	.start_building-text form {
@@ -352,12 +365,13 @@
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 0 0 8px 0;
+		margin: 0 auto 8px auto;
+		max-width: 457px;
 	}
 
 	.work_with-text p {
 		max-width: 456px;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 	}
 
 	.work_with-text a {
@@ -381,7 +395,7 @@
 	.easy_implement {
 		padding-left: 97px;
 		padding-right: 98px;
-		margin: 100px 0 0;
+		margin: 100px auto 0 auto;
 	}
 
 	.easy_implement-img-wrapper {
@@ -393,38 +407,36 @@
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 54px 0 8px 0;
+		margin: 54px auto 8px auto;
+		max-width: 573px;
 	}
 
 	.easy_implement-text p {
 		max-width: 573px;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 	}
 
 	.simple {
 		padding-left: 97px;
 		padding-right: 98px;
-		margin: 108px 0 0;
+		margin: 108px auto 0 auto;
 	}
 	.simple-img-wrapper {
 		max-width: 362px;
 		max-height: 320px;
 		margin: 0 auto;
 	}
-	.simple img {
-		width: 100%;
-	}
 
 	.simple-text h2 {
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 54px 0 8px 0;
+		margin: 54px auto 8px auto;
 	}
 
 	.simple-text p {
 		max-width: 573px;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 	}
 
 	.finances {
@@ -433,18 +445,17 @@
 		justify-content: center;
 		padding-left: 39px;
 		padding-right: 38px;
-		margin: 108px 0 0;
+		margin: 108px auto 0 auto;
 		text-align: center;
+		gap: 9px;
 	}
 
 	.finances div h3 {
-		margin: 34px 0px 18px 0;
+		margin: 34px auto 18px auto;
 	}
 
 	.finances div p {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0;
+		margin: 0 auto 0 auto;
 		max-width: 227px;
 	}
 
@@ -476,16 +487,15 @@
 		max-width: 546px;
 		max-height: 348px;
 		text-align: left;
-		flex-grow: 2;
 	}
 
 	.start_building-text h1 {
 		font-size: var(--h1-large-size);
 		line-height: var(--h1-large-line-height);
 		letter-spacing: -0.55px;
-		margin: 0;
+		margin: 0 auto 24px auto;
 		text-align: left;
-		margin-bottom: 24px;
+		max-width: 546px;
 	}
 
 	.start_building-text form {
@@ -539,6 +549,8 @@
 		padding-right: 163px;
 		flex-direction: row;
 		gap: 131px;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.work_with-text {
@@ -551,8 +563,9 @@
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 106px 0 8px 0;
+		margin: 106px auto 8px auto;
 		text-align: left;
+		max-width: 445px;
 	}
 
 	.work_with-text a {
@@ -567,11 +580,12 @@
 
 	.work_with-logos {
 		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 60px;
+		column-gap: 57px;
 		row-gap: 39px;
 		margin: 0;
 		align-content: center;
 		justify-content: center;
+		max-width: 536px;
 	}
 
 	.work_with-logos li svg {
@@ -579,49 +593,95 @@
 	}
 
 	.easy_implement {
-		padding-left: 97px;
-		padding-right: 98px;
-		margin: 100px 0 0;
+		padding-left: 165px;
+		padding-right: 260px;
+		margin: 150px auto 0 auto;
+		display: flex;
+		flex-direction: row;
+		gap: 125px;
+		justify-content: center;
 	}
 
 	.easy_implement-img-wrapper {
-		max-width: 392px;
-		max-height: 250px;
+		max-width: 445px;
+		max-height: 284px;
+		margin: 0;
+	}
+
+	.easy_implement-text {
+		margin: 0;
 	}
 
 	.easy_implement-text h2 {
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 54px 0 8px 0;
+		margin: 66px auto 8px auto;
+		max-width: 445px;
+		text-align: left;
+	}
+
+	.easy_implement-text p {
+		max-width: 445px;
+		text-align: left;
 	}
 
 	.simple {
-		padding-left: 97px;
-		padding-right: 98px;
-		margin: 108px 0 0;
+		padding-left: 165px;
+		padding-right: 172px;
+		margin: 150px auto 0 auto;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 97px;
 	}
 	.simple-img-wrapper {
-		max-width: 362px;
-		max-height: 320px;
-		margin: 0 auto;
-	}
-	.simple img {
-		width: 100%;
+		max-width: 563px;
+		max-height: 499px;
+		order: 2;
+		margin: 0;
 	}
 
 	.simple-text h2 {
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 54px 0 8px 0;
+		margin: 0 0 8px 0;
+		max-width: 445px;
+		text-align: left;
+	}
+
+	.simple-text p {
+		max-width: 445px;
+		text-align: left;
 	}
 
 	.finances {
 		display: flex;
 		flex-direction: row;
-		padding-left: 39px;
-		padding-right: 38px;
-		margin: 108px 0 0;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 146.57px auto 0 auto;
+		max-width: 1111px;
+		justify-content: space-between;
+	}
+
+	.finances div h3 {
+		margin: 34px auto 18px auto;
+	}
+
+	.finances div p {
+		margin: 0 auto 0 auto;
+		max-width: 350px;
+	}
+
+	.finances div:last-of-type p {
+		max-width: 352px;
+	}
+
+	.finances div svg {
+		width: 106px;
+		height: auto;
 	}
 }
