@@ -10,6 +10,8 @@ h1 {
     font-size: var(--h3-large-size);
     color: var(--san-julian-blue);
     letter-spacing: -0.24px;
+    height: 116px;
+    margin-top: 14.45px;
 }
 
 .submit {
@@ -23,9 +25,9 @@ h1 {
     height: 499px;
 }
 
-input,
-textarea,
-button {
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
     background-color: var(--bodylightgrey);
     font-family: var(--font-body);
     font-size: var(--body-font-size);
@@ -35,19 +37,19 @@ button {
     padding-left: 20px;
 }
 
-input,
-textarea {
+.contact-form input,
+.contact-form textarea {
     border: none;
     border-bottom: 1px solid var(--san-julian-blue);
     margin-top: 24px;
 }
 
-input {
+.contact-form input {
     height: var(--input-height);
     padding-bottom: 22px;
 }
 
-textarea {
+.contact-form textarea {
     height: 89px;
 }
 
@@ -94,7 +96,7 @@ label {
     padding-right: 49px;
 }
 
-.join {
+.join {    
     width: 100%;
     padding-top: 87px;
 }
@@ -117,7 +119,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 24px 48px 24px 24px;
+    margin: 0 48px 24px 24px;
     row-gap: 35px;
     
     padding-right:24px;
@@ -125,12 +127,13 @@ h2 {
 .row1, .row2, .row3 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     line-height: 26px;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .row1 {
+    padding-top: 5.87px;
     gap: 40px;
 }
 .row2 { 
