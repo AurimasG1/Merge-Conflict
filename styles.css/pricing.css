@@ -88,6 +88,25 @@ section article ul {
 	padding-left: 0;
 	margin: 0 auto;
 	width: fit-content;
+	position: relative;
+}
+
+section article ul::before,
+section article ul::after {
+	content: '';
+	position: absolute;
+	left: -100px;
+	width: 327px;
+	height: 1px; /* linijos storis */
+	background: var(--grey); /* spalva */
+}
+
+section article ul::before {
+	top: -24px; /* 24px virš UL */
+}
+
+section article ul::after {
+	bottom: -24px; /* 24px žemiau UL */
 }
 
 .free li:nth-of-type(-n + 3):before {
