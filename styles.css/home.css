@@ -3,6 +3,8 @@
 	flex-direction: column;
 	padding-left: 24px;
 	padding-right: 24px;
+	justify-content: center;
+	align-items: center;
 }
 
 .start_building-img-wrapper {
@@ -19,8 +21,9 @@
 	inset: 0;
 	background: linear-gradient(
 		to bottom,
-		rgba(154, 179, 202, 0.1),
-		rgba(72, 83, 122, 0.7)
+		rgba(156, 182, 205, 0) 0%,
+		rgba(72, 82, 121, 0) 40%,
+		rgba(21, 35, 92, 0.7) 100%
 	);
 	pointer-events: none;
 	border-radius: 18px;
@@ -30,7 +33,6 @@
 	display: block;
 	width: 100%;
 	border-radius: 18px;
-	/* background-color: #e4e9ee; */
 	box-shadow: 20px 10px 150px 0px rgba(0, 0, 0, 0.28);
 }
 
@@ -44,11 +46,12 @@
 	font-family: var(--font-heading);
 	text-align: center;
 	letter-spacing: -0.25px;
-	margin: 27px auto 13px auto;
+	margin-top: 27px;
+	margin-bottom: 13px;
 	font-weight: 400;
 	opacity: 1;
 	color: var(--san-julian-blue);
-	max-width: 327px;
+	width: 327px;
 }
 
 .start_building-text form {
@@ -113,7 +116,8 @@
 	display: flex;
 	flex-direction: column;
 	background-color: var(--mirage-blue);
-	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
 }
 
 .work_with-text {
@@ -320,15 +324,15 @@
 	.start_building-img-wrapper img {
 		border-radius: 23px;
 		background-color: #e4e9ee;
-		/* background: linear-gradient(#9ab3ca, #48537a); */
 	}
 
 	.start_building-text h1 {
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 54px auto 16px auto;
-		max-width: 573px;
+		margin-top: 54px;
+		margin-bottom: 16px;
+		width: 573px;
 	}
 
 	.start_building-text form {
@@ -391,13 +395,17 @@
 		font-size: var(--h2-size);
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
-		margin: 0 auto 8px auto;
+		margin-bottom: 8px;
+		margin-inline-start: 0;
+		margin-inline-end: 0;
 		max-width: 457px;
+		height: 66px;
 	}
 
 	.work_with-text p {
 		max-width: 456px;
-		margin: 0 auto 0 auto;
+		margin: 0;
+		height: 104px;
 	}
 
 	.work_with-text a {
@@ -431,7 +439,6 @@
 
 	.easy_implement-text h2 {
 		font-size: var(--h2-size);
-		/* line-height: var(--h2-line-height); */
 		line-height: 66px;
 		letter-spacing: -0.37px;
 		margin: 54px auto 8px auto;
@@ -441,6 +448,7 @@
 	.easy_implement-text p {
 		max-width: 573px;
 		margin: 0 auto 0 auto;
+		max-height: 48px;
 	}
 
 	.simple {
@@ -448,6 +456,7 @@
 		padding-right: 98px;
 		margin: 108px auto 0 auto;
 	}
+
 	.simple-img-wrapper {
 		max-width: 362px;
 		max-height: 320px;
@@ -456,15 +465,16 @@
 
 	.simple-text h2 {
 		font-size: var(--h2-size);
-		/* line-height: var(--h2-line-height); */
 		line-height: 66px;
 		letter-spacing: -0.37px;
-		margin: 54px auto 8px auto;
+		margin: 54px 0 8px 0;
+		max-width: 100%;
 	}
 
 	.simple-text p {
 		max-width: 573px;
 		margin: 0 auto 0 auto;
+		height: 48px;
 	}
 
 	.finances {
@@ -475,12 +485,13 @@
 		padding-right: 38px;
 		margin: 108px auto 0 auto;
 		text-align: center;
-		gap: 9px;
+		max-height: 306px;
 	}
 
 	.finances div h3 {
 		margin: 34px 0 18px 0;
 		max-width: 223px;
+		height: 21px;
 	}
 
 	.finances div p {
@@ -490,15 +501,18 @@
 	}
 
 	.finances div:first-of-type p {
-		max-width: 223px;
+		width: 223px;
+		height: 145px;
 	}
 
 	.finances div:nth-of-type(2) p {
-		max-width: 225px;
+		width: 225px;
+		height: 120px;
 	}
 
 	.finances div:last-of-type p {
-		max-width: 227px;
+		width: 227px;
+		height: 145px;
 	}
 
 	.finances div svg {
@@ -513,8 +527,6 @@
 		padding-left: 165px;
 		padding-right: 262.78px;
 		padding-bottom: 75.57px;
-		align-items: center;
-		justify-content: center;
 		width: 100%;
 	}
 
@@ -545,7 +557,8 @@
 		letter-spacing: -0.55px;
 		margin: 0 auto 24px auto;
 		text-align: left;
-		max-width: 546px;
+		width: 546px;
+		height: 243px;
 	}
 
 	.start_building-text form {
@@ -616,6 +629,7 @@
 		margin: 106px auto 8px auto;
 		text-align: left;
 		max-width: 445px;
+		height: 66px;
 	}
 
 	.work_with-text a {
@@ -626,6 +640,7 @@
 	.work_with-text p {
 		max-width: 445px;
 		margin: 0 auto;
+		height: 104px;
 	}
 
 	.work_with-logos {
@@ -669,11 +684,13 @@
 		margin: 66px auto 8px auto;
 		max-width: 445px;
 		text-align: left;
+		height: 66px;
 	}
 
 	.easy_implement-text p {
 		max-width: 445px;
 		text-align: left;
+		height: 76px;
 	}
 
 	.simple {
@@ -698,13 +715,16 @@
 		line-height: var(--h2-line-height);
 		letter-spacing: -0.37px;
 		margin: 0 0 8px 0;
-		max-width: 445px;
+		max-width: 100%;
+		width: 445px;
 		text-align: left;
+		height: 66px;
 	}
 
 	.simple-text p {
 		max-width: 445px;
 		text-align: left;
+		height: 48px;
 	}
 
 	.finances {
@@ -714,20 +734,22 @@
 		padding-right: 0;
 		margin: 146.57px auto 0 auto;
 		max-width: 1111px;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	.finances div h3 {
-		margin: 34px auto 18px auto;
+		margin: 34px 0 18px 0;
+		max-width: 100%;
+	}
+
+	.finances div:first-of-type h3 {
+		margin: 34px 0 18px 0;
 	}
 
 	.finances div p {
-		margin: 0 auto 0 auto;
-		max-width: 350px;
-	}
-
-	.finances div:last-of-type p {
-		max-width: 352px;
+		margin: 0;
+		max-width: 100%;
+		font-weight: 400;
 	}
 
 	.finances div svg {
