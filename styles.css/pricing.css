@@ -1,6 +1,4 @@
 .pricing {
-	padding-left: 24px;
-	padding-right: 24px;
 	margin-bottom: 83px;
 	text-align: center;
 }
@@ -181,8 +179,6 @@ li:last-of-type {
 
 @media (min-width: 768px) and (max-width: 1439px) {
 	.pricing {
-		padding-left: 39px;
-		padding-right: 40px;
 		margin-bottom: 106px;
 	}
 
@@ -329,8 +325,6 @@ li:last-of-type {
 
 @media (min-width: 1440px) {
 	.pricing {
-		padding-left: 165px;
-		padding-right: 165px;
 		margin-bottom: 100px;
 		margin-top: 47.53px;
 		text-align: left;
