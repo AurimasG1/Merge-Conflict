@@ -73,15 +73,24 @@
 				<h1>Submit a help request and we’ll get in touch shortly.</h1>
 
 				<div class="submit">
-					<form action="#" class="contact-form">
-						<input type="text" name="name" placeholder="Name" required />
-						<input type="email" name="email" placeholder="Email Address" required />
+					<form action="#" class="contact-form" novalidate>
+						<div class="form-group">
+							<input type="text" name="name" placeholder="Name" />
+							<p class="error-message">This field can’t be empty</p>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Email Address" />
+							<p class="error-message">This field can’t be empty</p>
+						</div>
 						<input type="text" name="company" placeholder="Company name" />
 						<input type="text" name="title" placeholder="Title" />
 						<textarea type="message" placeholder="Message"></textarea>
 						<div class="check">
-							<input type="checkbox" name="updates" class="updates" />
-							<label>Stay up-to-date with company announcements and updates to our API</label>
+							<label class="checkbox">
+								<input type="checkbox" id="updates" />
+								<span class="custom-checkbox"></span>
+							</label>
+							<p>Stay up-to-date with company announcements and updates to our API</p>
 						</div>
 						<button type="submit">Submit</button>
 					</form>
@@ -131,12 +140,12 @@
 
 			<!--- Section 2 start -->
 			<section class="ready-section">
-					<h3>Ready to start?</h3>
-					<form>
-						<input type="email" class="email" placeholder="Enter email address" />
-						<button class="demobutton">Schedule a Demo</button>
-					</form>
-				</section>
+				<h3>Ready to start?</h3>
+				<form>
+					<input type="email" class="email" placeholder="Enter email address" />
+					<button class="demobutton">Schedule a Demo</button>
+				</form>
+			</section>
 			<!--- Section 2 end -->
 		</main>
 		<!-- Footer starts here -->
