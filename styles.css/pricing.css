@@ -89,7 +89,9 @@ p {
 }
 
 .button:hover {
-	cursor: var(--cursor-pointer);
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
 	background-color: var(--san-julian-blue);
 	color: var(--linkwater-white);
 }
