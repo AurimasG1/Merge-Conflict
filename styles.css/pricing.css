@@ -1,7 +1,3 @@
-:root {
-	--cursor-pointer: url('/assets/shared/hand-cursor.png') 2 2, pointer;
-}
-
 .pricing {
 	margin-bottom: 83px;
 	text-align: center;
