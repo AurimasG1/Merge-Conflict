@@ -194,6 +194,13 @@ svg {
     padding-right: 20px;
   }
 
+  .contact-form {
+    margin-left: 162px;
+    margin-right: 161px;
+    max-width: 445px;
+    width: 100%;
+  }
+
   .submit {
     max-width: 445px;
     width: 100%;
@@ -292,7 +299,7 @@ svg {
     align-items: flex-start;
     text-align: left;
     margin: 0;
-    padding-top: 159px;
+    padding-top: 129px;
   }
 
   h2 {
