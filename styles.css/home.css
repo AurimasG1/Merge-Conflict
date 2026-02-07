@@ -757,20 +757,31 @@
 		padding-right: 0;
 		margin: 146.57px auto 0 auto;
 		max-width: 1111px;
-		justify-content: center;
+		justify-content: space-between;
+	}
+
+	.finances div {
+		max-width: 350px;
+	}
+
+	.finances div:first-of-type {
+		max-width: 352px;
 	}
 
 	.finances div h3 {
 		margin: 34px 0 18px 0;
 		max-width: 100%;
+		width: 100%;
 	}
 
 	.finances div:first-of-type h3 {
 		margin: 34px 0 18px 0;
+		width: 100%;
 	}
 
 	.finances div p {
 		margin: 0;
+		width: 100%;
 		max-width: 100%;
 		font-weight: 400;
 	}
