@@ -16,7 +16,12 @@ h1 {
   color: var(--san-julian-blue);
   line-height: 36px;
   margin: auto;
-  width: 327px;
+  max-width: 327px;
+  width: 100%;
+}
+
+.heading-break {
+  display: block;
 }
 
 h2 {
@@ -36,7 +41,8 @@ h2 {
   line-height: var(--body-line-height);
   margin: 0;
   padding-bottom: 19px;
-  width: 327px;
+  max-width: 327px;
+  width: 100%;
 }
 
 .statistics {
@@ -51,16 +57,18 @@ h2 {
   gap: 13px;
 }
 
-.statistics .mobile-about-image {
+.line-tablet {
+  display: none;
+}
+
+.statistics .about-image {
+  width: 100%;
+}
+
+.statistics .about-image img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-}
-
-.line-tablet,
-.statistics .tablet-about-image,
-.statistics .desktop-about-image {
-  display: none;
 }
 
 .line-mobile {
@@ -89,7 +97,7 @@ h2 {
   font-size: var(--h1-small-size);
   font-weight: 400;
   color: var(--dark-pink);
-  height: 77px;
+  min-height: 77px;
   margin: 0;
 }
 
@@ -97,11 +105,28 @@ h2 {
   margin-top: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  /* clip: rect(0, 0, 0, 0); */
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #ba4270;
+  outline-offset: 3px;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
   .empower {
     padding-right: 0;
     padding-left: 0;
-    ;
   }
 
   h1 {
@@ -112,7 +137,7 @@ h2 {
     color: var(--san-julian-blue);
     line-height: 56px;
     margin: auto;
-    width: 573px;
+    max-width: 573px;
   }
 
   .about {
@@ -130,7 +155,6 @@ h2 {
   }
 
   .about-text {
-
     flex: 0 0 485px;
     max-width: 485px;
     margin-left: 2px;
@@ -203,8 +227,7 @@ h2 {
 @media (min-width: 1440px) {
   .empower {
     padding-right: 0;
-    padding-left: 0;   
-    
+    padding-left: 0;       
   }
 
   h1 {
@@ -215,8 +238,8 @@ h2 {
     color: var(--san-julian-blue);
     line-height: 56px;
     margin-left: 260px;
-    width: 730px;
-    height: 189px;
+    max-width: 730px;
+    min-height: 189px;
     text-align: left;
   }
 
