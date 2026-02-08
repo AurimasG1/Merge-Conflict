@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<div class="container mobile-page">
+	<div class="container mobile-page middle">
 		<!--- Header start -->
 		<header class="header">
 			<nav class="nav">
@@ -70,7 +70,13 @@
 		<!--- Section 1 start -->
 		<main>
 			<section class="empower">
-				<h1>We empower innovators <br>by delivering access to the financial system</h1>
+				<h1 id="about-main-title" class="hero-heading">
+					We empower innovators
+					<span class="heading-break">
+						by delivering access to the financial system
+					</span>
+				</h1>
+
 				<div class="about">
 					<h2>Our Vision</h2>
 					<p class="about-text">
@@ -93,22 +99,35 @@
 			</section>
 			<!--- Section 1 end -->
 			<!--- Section 2 start -->
-			<section class="statistics">
-				<img src="./assets/about/mobile/image-team-members.jpg" alt="team_members" />
-				<hr>
-				<div class="stat-group">
-					<p class="stat-name">Teams Members</p>
-					<p class="number">300+</p>
+			<section class="statistics" aria-labelledby="stats-title">
+				<picture class="about-image">
+					<source srcset="./assets/about/desktop/image-team-members.jpg" media="(min-width: 1440px)" />
+					<source srcset="./assets/about/tablet/image-team-members.jpg" media="(min-width: 768px)" />
+					<img src="./assets/about/mobile/image-team-members.jpg" alt="" />
+				</picture>
+				<hr class="line-mobile" aria-hidden="true" />
+				<h2 id="stats-title" class="visually-hidden">Company statistics</h2>
+				<div class="displayed-row">
+					<div class="stat-group">
+						<hr class="line-tablet" aria-hidden="true">
+						<p class="stat-name">Team Members</p>
+						<p class="number"><span class="visually-hidden">Team members:</span> 300+</p>
+						<hr class="line-tablet" aria-hidden="true">
+					</div>
+					<div class="stat-group">
+						<hr class="line-tablet" aria-hidden="true">
+						<p class="stat-name">Office in the US</p>
+						<p class="number"><span class="visually-hidden">Office in the US:</span>3</p>
+						<hr class="line-tablet" aria-hidden="true">
+					</div>
+					<div class="stat-group">
+						<hr class="line-tablet" aria-hidden="true">
+						<p class="stat-name">Transactions analyzed</p>
+						<p class="number"><span class="visually-hidden">Transactions analyzed:</span>10M+</p>
+						<hr class="line-tablet" aria-hidden="true">
+					</div>
 				</div>
-				<div class="stat-group">
-					<p class="stat-name">Office in the US</p>
-					<p class="number">3</p>
-				</div>
-				<div class="stat-group">
-					<p class="stat-name">Transactions analyzed</p>
-					<p class="number">10M+</p>
-				</div>
-				<hr>
+				<hr class="line-mobile" aria-hidden="true" />
 			</section>
 			<section class="empower">
 				<div class="about">
