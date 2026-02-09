@@ -94,6 +94,8 @@
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .footer {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -128,6 +130,19 @@
 
   .footer-links a {
     height: 24px;
+  }
+
+  .footer::after {
+    content: "";
+    position: absolute;    
+    top: -95%;
+    left: 91%;
+    width: 768px;
+    height: 200px;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+      top/ cover;
+    z-index: 0;
+    transform: translateX(-50%) translateX(40px);
   }
 }
 
@@ -167,5 +182,18 @@
 
   .footer-links a {
     height: 24px;
+  }
+
+  .footer::after {
+    content: "";
+    position: absolute;    
+    top: -95%;
+    left: 91%;
+    width: 768px;
+    height: 200px;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+      top/ cover;
+    z-index: 0;
+    transform: translateX(-50%) translateX(40px);
   }
 }
