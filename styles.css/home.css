@@ -180,7 +180,7 @@
 	font-weight: 700;
 }
 
-.work_with-text a:hover {
+.work-with__text a:hover {
 	cursor:
 		var(--cursor-pointer) 2 2,
 		pointer;
