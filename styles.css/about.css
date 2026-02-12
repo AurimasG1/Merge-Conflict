@@ -100,10 +100,9 @@ h2 {
 @media (min-width: 768px) and (max-width: 1439px) {
   .empower {
     padding-right: 0;
-    padding-left: 0;
-    ;
+    padding-left: 0;;
   }
-
+  
   h1 {
     font-family: var(--font-heading);
     font-size: var(--h2-size);
@@ -116,6 +115,17 @@ h2 {
   }
 
   .about {
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: flex-start; */
+    /* margin: 0;
+    padding-left: 0px;
+    max-width: 689px;
+    width: 100%;
+    padding-bottom: 28px; */
+    /* column-gap: 10px; */
+    /* align-items: flex-start;
+    gap: 32px; */
     display: flex;
     align-items: flex-start;
     max-width: 689px;
@@ -124,16 +134,29 @@ h2 {
   }
 
   h2 {
-    flex: 0 0 223px;
+    /* font-size: var(--h3-large-size);
+    text-align: left;
+    width: 223px;
+    line-height: 44px; */
+    flex: 0 0 223px;        /* title column */
     width: 203px;
     margin: 0;
   }
 
   .about-text {
-
-    flex: 0 0 485px;
+    /* max-width: 456px;
+    width: 100%;*/
+    /* text-align: left;
+    margin: 0 0 0 0;
+    letter-spacing: 0px;
+    line-height: 28px;
+    font-weight: 400; 
+    flex: 1;                /* take remaining space */
+  /* max-width: none;
+  width: auto; */ 
+   flex: 0 0 485px;        /* paragraph column */
     max-width: 485px;
-    margin-left: 2px;
+    margin-left: 2px;      /* gap between columns */
     margin-top: 0;
     margin-right: 40px;
     padding: 0;
@@ -198,130 +221,4 @@ h2 {
   .about:last-child {
     padding-bottom: 58px;
   }
-}
-
-@media (min-width: 1440px) {
-  .empower {
-    padding-right: 0;
-    padding-left: 0;   
-    
-  }
-
-  h1 {
-    font-family: var(--font-heading);
-    font-size: var(--h1-small-size);
-    font-weight: 400;
-    letter-spacing: -0.43px;
-    color: var(--san-julian-blue);
-    line-height: 56px;
-    margin-left: 260px;
-    width: 730px;
-    height: 189px;
-    text-align: left;
-  }
-
-  .about {
-    display: flex;
-    align-items: flex-start;
-    max-width: 920px;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  h2 {
-    flex: 0 0 285px;
-    width: 285px;
-    margin: 0;
-    text-align: left;
-    font-size: var(--h3-large-size);
-  }
-
-  .about-text {
-    flex: 0 0 635px;
-    max-width: 635px;
-    margin-left: 0px;
-    margin-top: 0;
-    margin-right: 0px;
-    padding: 0;
-    line-height: 28px;
-    text-align: left;
-    letter-spacing: -0.3px;
-  }
-
-  .statistics {
-    gap: 0;
-    width: 100%;
-    margin: 0;
-    padding-top: 72px;
-    padding-bottom: 62px;
-    
-  }
-
-  .statistics .mobile-about-image {
-    display: none;
-  }
-
-  .statistics .tablet-about-image {
-    display: none;
-  }
-
-  .statistics .desktop-about-image {
-    display: block;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin-bottom: 72px;    
-  }
-
-  .middle::after {
-    content: "";
-    position: absolute;    
-    top: 572px;
-    left: -520px;
-    width: 780px;
-    height: 780px;
-    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
-      left/ cover;
-    z-index: 0;
-  }
-
-  .displayed-row {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 136px;
-    margin-left: 165px;
-    gap: 30px;
-  }
-
-  .stat-group {
-    max-width: 350px;
-    width: 100%;
-    margin: 0;
-    text-align: left;
-  }
-
-  .line-mobile {
-    display: none;
-  }
-
-  .line-tablet {
-    display: block;
-    width: 350px;
-    height: 1px;
-    color: var(--light-san-julian-blue);
-    margin: 0;
-    opacity: 0.25;
-  }
-
-  .stat-name {
-    padding-top: 17px;
-  }
-
-  .about:last-child {
-    padding-bottom: 3px;
-  }
-
-
 }
