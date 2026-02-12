@@ -1,115 +1,135 @@
 "use strict";
+// "use strict"
 
-const openMenu = document.getElementById("openMenu");
-const closeMenu = document.getElementById("closeMenu");
-const mobileMenu = document.getElementById("mobileMenu");
+// // Sliding menu for mobile Home page
+// const openMenu = document.getElementById("openMenu");
+// const closeMenu = document.getElementById("closeMenu");
+// const mobileMenu = document.getElementById("mobileMenu");
 
-let lastFocusedElement = null;
+// openMenu.addEventListener("click", () => {
+//   mobileMenu.classList.add("active");
+// });
 
-function getFocusable() {
-  return mobileMenu.querySelectorAll(
-    'a, button, [tabindex]:not([tabindex="-1"])'
-  );
-}
+// closeMenu.addEventListener("click", () => {
+//   mobileMenu.classList.remove("active");
+// });
 
-function trapFocus(e) {
-  if (mobileMenu.hidden) return;
-  if (e.key !== "Tab") return;
+// // Contact page activity
+// const form = document.querySelector(".contact-form");
+// const requiredInputs = form.querySelectorAll(".form-group input");
+// const emailInput = document.getElementById("email");
 
-  const focusable = getFocusable();
-  const first = focusable[0];
-  const last = focusable[focusable.length - 1];
+// const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (e.shiftKey && document.activeElement === first) {
-    e.preventDefault();
-    last.focus();
-  } else if (!e.shiftKey && document.activeElement === last) {
-    e.preventDefault();
-    first.focus();
-  }
-}
+// // submit validation
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-function openMobileMenu() {
-  lastFocusedElement = document.activeElement;
+//   requiredInputs.forEach((input) => {
+//     const formGroup = input.parentElement;
+//     const errorMessage = formGroup.querySelector(".error-message");
 
-  mobileMenu.hidden = false;
-  mobileMenu.classList.add("active");
+//     // empty field check
+//     if (input.value.trim() === "") {
+//       formGroup.classList.add("error");
+//       errorMessage.textContent = "This field can’t be empty";
+//       return;
+//     }
 
-  openMenu.setAttribute("aria-expanded", "true");
-  openMenu.setAttribute("aria-label", "Close menu");
+//     // email format check
+//     if (input === emailInput && !emailRegex.test(input.value)) {
+//       formGroup.classList.add("error");
+//       errorMessage.textContent = "Please enter a valid email address";
+//       return;
+//     }
 
-  document.body.style.overflow = "hidden";
+//     // valid field
+//     formGroup.classList.remove("error");
+//   });
+// });
 
-  document.querySelector(".desktop-links").inert = true;
+// // remove error while typing
+// requiredInputs.forEach((input) => {
+//   input.addEventListener("input", () => {
+//     input.parentElement.classList.remove("error");
+//   });
+// });
 
-  closeMenu.focus();
-}
+// const status = document.getElementById("form-status");
+// status.textContent = "Message sent successfully!";
 
-function closeMobileMenu() {
-  mobileMenu.hidden = true;
-  mobileMenu.classList.remove("active");
+"use strict";
 
-  openMenu.setAttribute("aria-expanded", "false");
-  openMenu.setAttribute("aria-label", "Open menu"); // ← added
-
-  document.body.style.overflow = "";
-
-  document.querySelector(".desktop-links").inert = false;
-
-  if (lastFocusedElement) lastFocusedElement.focus();
-}
-
-openMenu.addEventListener("click", openMobileMenu);
-closeMenu.addEventListener("click", closeMobileMenu);
-
-document.addEventListener("keydown", trapFocus);
-
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && !mobileMenu.hidden) {
-    closeMobileMenu();
-  }
-});
-
-
-
- 
-// Contact page activity
+// ===== CONTACT FORM =====
 const form = document.querySelector(".contact-form");
-const requiredInputs = form.querySelectorAll(".form-group input");
+const formGroups = form.querySelectorAll(".form-group");
+const requiredInputs = form.querySelectorAll(".form-group input[required]");
 const emailInput = document.getElementById("email");
+const status = document.getElementById("form-status");
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// submit validation
+// submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  let formIsValid = true;
+  let firstErrorInput = null;
 
   requiredInputs.forEach((input) => {
     const formGroup = input.parentElement;
     const errorMessage = formGroup.querySelector(".error-message");
 
-    // empty field check
+    // empty check
     if (input.value.trim() === "") {
-      formGroup.classList.add("error");
-      errorMessage.textContent = "This field can’t be empty";
+      showError(input, formGroup, errorMessage, "This field can’t be empty");
+      formIsValid = false;
+      if (!firstErrorInput) firstErrorInput = input;
       return;
     }
 
-    // email format check
+    // email check
     if (input === emailInput && !emailRegex.test(input.value)) {
-      formGroup.classList.add("error");
-      errorMessage.textContent = "Please enter a valid email address";
+      showError(input, formGroup, errorMessage, "Please enter a valid email address");
+      formIsValid = false;
+      if (!firstErrorInput) firstErrorInput = input;
       return;
     }
 
-    // valid field
-    formGroup.classList.remove("error");
+    clearError(input, formGroup);
   });
+
+  if (!formIsValid) {
+    status.textContent = "Please fix the errors in the form.";
+    firstErrorInput.focus();
+    return;
+  }
+
+  // success
+  if (formIsValid) {
+  status.textContent = "Message sent successfully!";
+  form.reset();
+
+  status.focus();   // <-- HERE
+}
+
 });
 
 // remove error while typing
 requiredInputs.forEach((input) => {
   input.addEventListener("input", () => {
-    input.parentElement.classList.remove("error");
+    clearError(input, input.parentElement);
   });
 });
+
+// ===== helpers =====
+function showError(input, formGroup, errorMessage, message) {
+  formGroup.classList.add("error");
+  errorMessage.textContent = message;
+  input.setAttribute("aria-invalid", "true");
+}
+
+function clearError(input, formGroup) {
+  formGroup.classList.remove("error");
+  input.removeAttribute("aria-invalid");
+}
