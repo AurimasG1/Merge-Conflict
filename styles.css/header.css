@@ -49,12 +49,13 @@
   position: absolute;
   width: 780px;
   height: 780px;
-  background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat center / cover;
+  background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+    center / cover;
   z-index: 0;
   pointer-events: none;
 }
 
-.mobile-menu>* {
+.mobile-menu > * {
   position: relative;
   z-index: 1;
 }
@@ -118,6 +119,14 @@
   background-color: var(--charm-pink);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
   .header {
     width: 100%;
@@ -140,10 +149,10 @@
 
   .desktop-links {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding-left: 64.34px;
-    gap: 40px;
     cursor: pointer;
   }
 
@@ -157,7 +166,6 @@
     color: var(--san-julian-blue);
     font-weight: 700;
     opacity: 0.7;
-    
   }
 
   .desktop-links a:hover {
@@ -165,19 +173,26 @@
   }
 
   .desktop-links .cta {
+    position: absolute;
+    top: 40px;
+    right: 40px;
     padding-top: 16px;
-    margin: 016px 0 0 85px;
     color: var(--linkwater-white);
     background-color: var(--dark-pink);
     border-radius: 24px;
     border: none;
     letter-spacing: -0.12px;
     height: var(--button-height);
-    width: 173px;  
+    width: 173px;
   }
 }
 
 @media (min-width: 1440px) {
+  .header {
+    width: 100%;
+    padding: 40px 165px 80px 165.76px;
+  }
+
   .menu-btn {
     display: none;
   }
@@ -186,9 +201,48 @@
     display: none;
   }
 
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
   .desktop-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding-left: 64.34px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+  }
+
+  .desktop-links a {
+    text-decoration: none;
+    color: var(--san-julian-blue);
+    font-weight: 700;
+    opacity: 0.7;
+  }
+
+  .desktop-links a:hover {
+    opacity: 1;
+  }
+
+  .desktop-links .cta {
+    position: absolute;
+    top: 40px;
+    right: 165px;
+    padding-top: 16px;
+    color: var(--linkwater-white);
+    background-color: var(--dark-pink);
+    border-radius: 24px;
+    border: none;
+    letter-spacing: -0.12px;
+    height: var(--button-height);
+    width: 173px;
   }
 }

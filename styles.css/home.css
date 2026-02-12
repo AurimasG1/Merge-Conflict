@@ -77,6 +77,13 @@
 	box-shadow: 18px 15px 30px 10px rgba(0, 0, 0, 0.278);
 }
 
+.start_building-text form input:hover {
+	opacity: 1;
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
+}
+
 .start_building-text form button {
 	width: 100%;
 	opacity: 1;
@@ -93,6 +100,13 @@
 	padding-left: 50px;
 	padding-right: 46px;
 	border: none;
+}
+
+.start_building-text form button:hover {
+	background-color: var(--charm-pink);
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
 }
 
 .start_building-text p {
@@ -163,6 +177,15 @@
 	margin-bottom: 80px;
 	display: inline-block;
 	text-decoration: none;
+	font-weight: 700;
+}
+
+.work_with-text a:hover {
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
+	color: var(--mirage-blue);
+	background-color: var(--white);
 }
 
 .work_with-logos {
@@ -734,20 +757,31 @@
 		padding-right: 0;
 		margin: 146.57px auto 0 auto;
 		max-width: 1111px;
-		justify-content: center;
+		justify-content: space-between;
+	}
+
+	.finances div {
+		max-width: 350px;
+	}
+
+	.finances div:first-of-type {
+		max-width: 352px;
 	}
 
 	.finances div h3 {
 		margin: 34px 0 18px 0;
 		max-width: 100%;
+		width: 100%;
 	}
 
 	.finances div:first-of-type h3 {
 		margin: 34px 0 18px 0;
+		width: 100%;
 	}
 
 	.finances div p {
 		margin: 0;
+		width: 100%;
 		max-width: 100%;
 		font-weight: 400;
 	}
