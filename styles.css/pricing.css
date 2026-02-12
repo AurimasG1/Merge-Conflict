@@ -1,7 +1,3 @@
-:root {
-	--cursor-pointer: url('/assets/shared/hand-cursor.png') 2 2, pointer;
-}
-
 .pricing {
 	margin-bottom: 83px;
 	text-align: center;
@@ -93,7 +89,9 @@ p {
 }
 
 .button:hover {
-	cursor: var(--cursor-pointer);
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
 	background-color: var(--san-julian-blue);
 	color: var(--linkwater-white);
 }

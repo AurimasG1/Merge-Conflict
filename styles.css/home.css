@@ -1,8 +1,4 @@
-:root {
-	--cursor-pointer: url('/assets/shared/hand-cursor.png') 2 2, pointer;
-}
-
-.start-building {
+.start_building {
 	display: flex;
 	flex-direction: column;
 	padding-left: 24px;
@@ -83,7 +79,9 @@
 
 .start-building__text form input:hover {
 	opacity: 1;
-	cursor: var(--cursor-pointer);
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
 }
 
 .start-building__text form button {
@@ -106,7 +104,9 @@
 
 .start-building__text form button:hover {
 	background-color: var(--charm-pink);
-	cursor: var(--cursor-pointer);
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
 }
 
 .start-building__text p {
@@ -180,8 +180,10 @@
 	font-weight: 700;
 }
 
-.work-with__text a:hover {
-	cursor: var(--cursor-pointer);
+.work_with-text a:hover {
+	cursor:
+		var(--cursor-pointer) 2 2,
+		pointer;
 	color: var(--mirage-blue);
 	background-color: var(--white);
 }
@@ -762,20 +764,31 @@
 		padding-right: 0;
 		margin: 146.57px auto 0 auto;
 		max-width: 1111px;
-		justify-content: center;
+		justify-content: space-between;
+	}
+
+	.finances div {
+		max-width: 350px;
+	}
+
+	.finances div:first-of-type {
+		max-width: 352px;
 	}
 
 	.finances div h3 {
 		margin: 34px 0 18px 0;
 		max-width: 100%;
+		width: 100%;
 	}
 
 	.finances div:first-of-type h3 {
 		margin: 34px 0 18px 0;
+		width: 100%;
 	}
 
 	.finances div p {
 		margin: 0;
+		width: 100%;
 		max-width: 100%;
 		font-weight: 400;
 	}

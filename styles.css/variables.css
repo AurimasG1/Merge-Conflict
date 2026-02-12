@@ -96,4 +96,6 @@
 
 	--checkbox-opacity-normal: 0.25;
 	--checkbox-opacity-disabled: 0.05;
+
+	--cursor-pointer: url('../assets/shared/hand-cursor.png');
 }
