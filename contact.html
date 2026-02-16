@@ -149,15 +149,19 @@
           <h1>Submit a help request and we’ll get in touch shortly.</h1>
           <div class="desktop-contact">
             <div class="submit">
-              <form action="#" class="contact-form">
+              <form action="#" class="contact-form" aria-label="Contact form">
+				<label for="name" class="visually-hidden">Name</label>
                 <input type="text" name="name" placeholder="Name" required />
+				<label for="email" class="visually-hidden">Email</label>
                 <input
                   type="email"
                   name="email"
                   placeholder="Email Address"
                   required
                 />
+				<label for="company" class="visually-hidden">Company name</label>
                 <input type="text" name="company" placeholder="Company name" />
+				<label for="title" class="visually-hidden">Title</label>
                 <input type="text" name="title" placeholder="Title" />
                 <textarea type="message" placeholder="Message"></textarea>
                 <div class="check">
