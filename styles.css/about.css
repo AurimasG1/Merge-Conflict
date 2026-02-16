@@ -100,9 +100,9 @@ h2 {
 @media (min-width: 768px) and (max-width: 1439px) {
   .empower {
     padding-right: 0;
-    padding-left: 0;;
+    padding-left: 0;
   }
-  
+
   h1 {
     font-family: var(--font-heading);
     font-size: var(--h2-size);
@@ -123,15 +123,15 @@ h2 {
   }
 
   h2 {
-    flex: 0 0 223px;        
+    flex: 0 0 223px;
     width: 203px;
     margin: 0;
   }
 
   .about-text {
-   flex: 0 0 485px;       
+    flex: 0 0 485px;
     max-width: 485px;
-    margin-left: 2px;      
+    margin-left: 2px;
     margin-top: 0;
     margin-right: 40px;
     padding: 0;
@@ -275,7 +275,8 @@ h2 {
     left: -520px;
     width: 780px;
     height: 780px;
-    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat left/ cover;
+    background: url("/assets/shared/desktop/bg-pattern-circle.svg") no-repeat
+      left/ cover;
     z-index: 0;
   }
 
@@ -317,4 +318,3 @@ h2 {
     padding-bottom: 3px;
   }
 }
-

@@ -8,7 +8,7 @@ let lastFocusedElement = null;
 
 function getFocusable() {
   return mobileMenu.querySelectorAll(
-    'a, button, [tabindex]:not([tabindex="-1"])'
+    'a, button, [tabindex]:not([tabindex="-1"])',
   );
 }
 
@@ -70,9 +70,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-
-
- 
 // Contact page activity
 const form = document.querySelector(".contact-form");
 const requiredInputs = form.querySelectorAll(".form-group input");
