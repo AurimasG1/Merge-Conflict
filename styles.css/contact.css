@@ -197,7 +197,7 @@ h2 {
     width: 327px;
 }
 
-.brands {
+.brands-mobile {
     width: 100%;
     height: 154px;
     display: flex;
@@ -207,6 +207,10 @@ h2 {
     margin: 0;
     row-gap: 35px;
     padding-right: 24px;
+}
+
+.brands-tablet {
+    display: none;
 }
 
 .row1,
