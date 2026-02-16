@@ -167,7 +167,7 @@ body {
       center bottom / cover;
     pointer-events: none;
     z-index: 1;
-  }  
+  }
 
   .home-page-middle2::after {
     content: "";
