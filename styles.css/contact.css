@@ -39,6 +39,12 @@ h1 {
     outline: none;
 }
 
+.error-text {
+    color: red;
+    text-align: left;
+    display: block;
+    padding-left: 20px;
+}
 .form-group input:focus {
     border-bottom: 1px solid #4b6cff;
     color: #36536b;
@@ -292,6 +298,10 @@ svg {
   background: #000;
 }
 
+.brands-tablet {
+    display: none;
+}
+
 
 
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -419,15 +429,15 @@ svg {
         width: 100%;
     }
 
-    .join {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-        margin: 0;
-        padding-top: 129px;
-    }
+  .join {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+    padding-top: 129px;
+  }
 
     h2 {
         text-align: left;
