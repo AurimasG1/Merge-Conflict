@@ -91,7 +91,6 @@
   border: 0;
 }
 
-
 @media (min-width: 768px) and (max-width: 1439px) {
   .footer {
     position: relative;
@@ -134,7 +133,7 @@
 
   .footer::after {
     content: "";
-    position: absolute;    
+    position: absolute;
     top: -95%;
     left: 91%;
     width: 768px;
@@ -186,7 +185,7 @@
 
   .footer::after {
     content: "";
-    position: absolute;    
+    position: absolute;
     top: -95%;
     left: 91%;
     width: 768px;
