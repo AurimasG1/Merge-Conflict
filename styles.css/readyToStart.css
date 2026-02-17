@@ -53,6 +53,25 @@
   background-color: var(--charm-pink);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.email:focus-visible,
+.demobutton:focus-visible {
+  outline: 2px solid #4b6cff;
+  outline-offset: 2px;
+}
+
+
 @media (min-width: 768px) and (max-width: 1439px) {
   .ready-section {
     margin-bottom: 0;
