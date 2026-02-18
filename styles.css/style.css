@@ -5,10 +5,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--bodylightgrey);
 }
 
 .container {
   min-width: 375px;
+  max-width: 1440px;
+  margin: auto;
   background-color: var(--bodylightgrey);
   text-align: center;
   position: relative;
