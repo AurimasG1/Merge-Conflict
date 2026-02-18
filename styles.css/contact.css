@@ -3,22 +3,9 @@
   flex-direction: column;
   width: 100%;
   padding: 0 24px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 24px;
 }
 
 h1 {
-  font-family: var(--font-heading);
-  font-size: var(--h3-large-size);
-  font-weight: 400;
-  color: var(--san-julian-blue);
-  line-height: var(--h2-large-line-height);
-  letter-spacing: -0.24px;
-  height: 116px;
-  margin-top: 14.45px;
-  margin-bottom: 37px;
   font-family: var(--font-heading);
   font-size: var(--h3-large-size);
   font-weight: 400;
@@ -39,6 +26,8 @@ h1 {
   display: flex;
   flex-direction: column;
   min-height: 499px;
+  max-width: 327px;
+  width: 100%;
 }
 
 .form-group input {
@@ -121,6 +110,7 @@ h1 {
   gap: 26px;
   padding-bottom: 29px;
   width: 100%;
+  text-align: left;
 }
 
 .checkbox {
@@ -152,7 +142,6 @@ h1 {
   opacity: 0.25;
   border-radius: 4px;
   display: inline-block;
-  transition: background-color 0.2s ease;
 }
 
 /* checked state */
@@ -208,19 +197,18 @@ h2 {
   padding-bottom: 29.87px;
   letter-spacing: 32;
   width: 327px;
-  text-align: center;
 }
 
 .brands-mobile {
-    width: 100%;
-    height: 154px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    row-gap: 35px;
-    padding-right: 24px;
+  width: 100%;
+  height: 154px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  row-gap: 35px;
+  padding-right: 24px;
 }
 
 .row1,
@@ -249,21 +237,22 @@ h2 {
   height: 27px;
 }
 
-svg {
+.brands-mobile svg,
+.brands-tablet svg {
   transform: scale(0.85);
   overflow: visible;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .visually-hidden-checkbox {
@@ -271,6 +260,11 @@ svg {
   opacity: 0;
   width: 24px;
   height: 24px;
+}
+
+#updates:checked ~ .checkbox .custom-checkbox {
+  background-color: var(--dark-pink);
+  opacity: 1;
 }
 
 #updates:checked ~ .checkbox .custom-checkbox::after {
@@ -286,27 +280,14 @@ svg {
 .form-group input:focus,
 .contact-form textarea:focus,
 .contact-form button:focus,
-.checkbox input[type="checkbox"]:focus-visible + .custom-checkbox {
-    outline: 2px solid #4b6cff;
-    outline-offset: 2px;
-}
-
-.checkbox input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-}
-
-.checkbox input[type="checkbox"]:checked + .custom-checkbox {
-  background: #000;
+#updates:focus-visible + .checkbox .custom-checkbox {
+  outline: 2px solid #4b6cff;
+  outline-offset: 2px;
 }
 
 .brands-tablet {
-    display: none;
+  display: none;
 }
-
-
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .contact {
@@ -429,7 +410,13 @@ svg {
   }
 
   .submit {
-    width: 445px;
+    max-width: 445px;
+    width: 100%;
+  }
+
+  #contact-form {
+    max-width: 445px;
+    width: 100%;
   }
 
   .join {
