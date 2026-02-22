@@ -18,6 +18,12 @@
   color: var(--san-julian-blue);
 }
 
+.header-logo:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
+}
+
 .menu-btn {
   background: none;
   border: none;
@@ -80,6 +86,9 @@
 }
 
 .mobile-menu a:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
   opacity: 1;
 }
 
@@ -116,6 +125,9 @@
 }
 
 .cta:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
   background-color: var(--charm-pink);
 }
 
@@ -169,6 +181,9 @@
   }
 
   .desktop-links a:hover {
+    cursor:
+      var(--cursor-pointer) 2 2,
+      pointer;
     opacity: 1;
   }
 
@@ -184,6 +199,13 @@
     letter-spacing: -0.12px;
     height: var(--button-height);
     width: 173px;
+    opacity: 1;
+  }
+  .desktop-links .cta:hover {
+    cursor:
+      var(--cursor-pointer) 2 2,
+      pointer;
+    background-color: var(--charm-pink);
   }
 }
 
@@ -229,6 +251,9 @@
   }
 
   .desktop-links a:hover {
+    cursor:
+      var(--cursor-pointer) 2 2,
+      pointer;
     opacity: 1;
   }
 
@@ -244,5 +269,13 @@
     letter-spacing: -0.12px;
     height: var(--button-height);
     width: 173px;
+    opacity: 1;
+  }
+
+  .desktop-links .cta:hover {
+    cursor:
+      var(--cursor-pointer) 2 2,
+      pointer;
+    background-color: var(--charm-pink);
   }
 }

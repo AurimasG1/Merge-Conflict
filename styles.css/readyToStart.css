@@ -43,6 +43,13 @@
   box-shadow: 20px 9px 41px 5px var(--dark-grey);
 }
 
+.email:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
+  opacity: 1;
+}
+
 .demobutton {
   color: var(--linkwater-white);
   text-align: center;
@@ -50,6 +57,9 @@
 }
 
 .demobutton:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
   background-color: var(--charm-pink);
 }
 
@@ -70,7 +80,6 @@
   outline: 2px solid #4b6cff;
   outline-offset: 2px;
 }
-
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .ready-section {

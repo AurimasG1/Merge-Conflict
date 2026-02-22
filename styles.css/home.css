@@ -124,6 +124,12 @@
   text-decoration: underline;
 }
 
+.start-building__text p a:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
+}
+
 .work-with {
   padding-left: 24px;
   padding-right: 24px;

@@ -29,6 +29,12 @@
   cursor: pointer;
 }
 
+.footer-logo:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
+}
+
 .footer-logo svg {
   display: block;
   pointer-events: none;
@@ -53,6 +59,9 @@
 }
 
 .footer-menu a:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
   opacity: 1;
 }
 
@@ -71,6 +80,9 @@
 }
 
 .footer-links a:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
   color: var(--charm-pink);
 }
 
