@@ -84,6 +84,15 @@ h1 {
   cursor: pointer;
 }
 
+.contact-form input:hover,
+.form-group input:hover,
+.contact-form textarea:hover,
+.contact-form button:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
+}
+
 .contact-form input,
 .contact-form textarea {
   border: none;
@@ -142,6 +151,12 @@ h1 {
   opacity: 0.25;
   border-radius: 4px;
   display: inline-block;
+}
+
+.custom-checkbox:hover {
+  cursor:
+    var(--cursor-pointer) 2 2,
+    pointer;
 }
 
 /* checked state */
